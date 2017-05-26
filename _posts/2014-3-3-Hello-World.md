@@ -1,8 +1,14 @@
 ---
 layout: post
 title: Hola!
+published: true
 ---
-Hello World!  
+---
+title: Hello World
+layout: posts
+permalink: /helloworld/
+---
+## Hello World!
 This is my first post, so it ought to be a Hello World.  
 Stay tuned at [my blog][Satish Yadav Blog] for more.
 
