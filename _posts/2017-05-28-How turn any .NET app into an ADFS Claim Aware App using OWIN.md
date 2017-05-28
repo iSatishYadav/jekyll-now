@@ -1,16 +1,7 @@
----
-published: false
----
 
 ---
 layout:post
 ---
-layout:post
-
----
-title
-permalink
-
 10 Google Photos feature you don't know (probably)
 /google-photos-hidden-features/
 How turn any .NET app into an ADFS Claim Aware App using OWIN
