@@ -1,5 +1,5 @@
 ---
-layout:post
+layout: post
 permalink: /adfs-in-dot-net-apps/
 ---
 
@@ -11,7 +11,11 @@ Hi, in this post we'll see how you can convert any of existing .NET web app into
 
 So, let's get started. 
 
->There are many tutorials on Internet on _how to connect ADFS to an application_ but they don't tell how to use these claims received from ADFS into a real world application. 
+>There are many tutorials on Internet on _how to connect ADFS to an application_ but they don't tell how to use these claims received from ADFS into a real world application.
+So,we'll see:
+1. How to make your existing app _claim aware_. 
+2. How to connect ADFS to your app. 
+3. How to use _claims_ received from ADFS in your app. 
 
 First of all, we'll create two ASP.NET apps, one Web-forms and one MVC; so we have a fair idea on how to take care of each types of apps. 
 
@@ -29,7 +33,7 @@ Now here are the important stuff.
 
 ````
 using System;
-....
+
 
 public class Startup
 {
@@ -39,3 +43,4 @@ public class Startup
   }
 } 
 ````
+
