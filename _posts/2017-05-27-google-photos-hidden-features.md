@@ -1,9 +1,8 @@
 ---
 layout: post
+title: Top Google Photos features you're not using (probably)
 permalink: /google-photos-hidden-features/
 ---
-Top Google Photos features you're not using (probably)
-===
 
 If you're reading this article that means you already know about Google Photos, if not let's see.
 
