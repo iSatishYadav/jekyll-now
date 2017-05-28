@@ -1,7 +1,6 @@
 ---
 layout:post
-title: Google Photos feature you don't know (probably)
-permalink: /google-photos-hidden-features/
+permalink: /adfs-in-dot-net-apps/
 ---
 
 How turn any .NET app into an ADFS Claim Aware App using OWIN
