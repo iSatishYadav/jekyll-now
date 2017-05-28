@@ -3,7 +3,7 @@ layout:post
 permalink: /adfs-in-dot-net-apps/
 ---
 
-How turn any .NET app into an ADFS Claim Aware App using OWIN
+How to turn any .NET app into an ADFS Claim Aware App (using OWIN) 
 ===
 Hi, in this post we'll see how you can convert any of existing .NET web app into 
 1. Claim Aware
