@@ -20,4 +20,4 @@ P. S. I've setup this blog using same steps and I am writing this post using sam
 [GitHub Pages]: https://pages.github.com?utm_source=blog.satishyadav.com
 [Jekyll]: https://jekyllrb.com/?utm_source=blog.satishyadav.com
 [Jekyll Now]: https://github.com/barryclark/jekyll-now?utm_source=blog.satishyadav.com
-[Mr. Hyde App]: https://play.google.com/store/apps/details?id=org.faudroids.mrhyde?utm_source=blog.satishyadav.com
+[Mr. Hyde App]: https://play.google.com/store/apps/details?id=org.faudroids.mrhyde&utm_source=blog.satishyadav.com
