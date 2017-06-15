@@ -5,7 +5,8 @@ title: How to post multiple entities Web API
 I'll keep this post short and to the point. 
 Here's the Server Side code for a Web API Contoller:
 
-````[ResponseType(typeof(Customer))]
+````
+[ResponseType(typeof(Customer))]
 public async Task<IHttpActionResult> PostCustomer(IEnumerable<Customer> customers)
 {
   	if (!ModelState.IsValid)
