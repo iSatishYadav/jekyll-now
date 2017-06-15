@@ -17,9 +17,9 @@ public async Task<IHttpActionResult> PostCustomer(IEnumerable<Customer> customer
 	  return StatusCode(HttpStatusCode.Created);
 }
 
-And here's how to call this:
+//And here's how to call this:
 
-````public async Task<string> PostMultipleCustomers()
+public async Task<string> PostMultipleCustomers()
 {
   var customers = new List<Customer>
   {
