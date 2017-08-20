@@ -1,8 +1,7 @@
 ---
 layout: post
-title: Convert Markdown to Google AMP
+title: Convert Markdown to Google AMP using Amper
 ---
-# Convert Markdown to Google AMP using Amper
 Amper is a REST-API which converts **Markdown** text to Google's AMP syntax.
 ## Usage
 Send a POST request with:
