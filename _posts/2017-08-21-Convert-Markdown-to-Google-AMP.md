@@ -3,10 +3,8 @@ layout: post
 title: Convert Markdown to Google AMP using Amper
 ---
 
+[Amper](https://github.com/iSatishYadav/Amper) is a REST-API which converts **Markdown** text to Google's AMP syntax.
 
-Amper (https://github.com/iSatishYadav/Amper) is a REST-API which converts **Markdown** text to Google's AMP syntax.
-
-More here at 
 
 ## Usage
 Send a POST request with:
