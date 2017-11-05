@@ -3,9 +3,9 @@ layout: post
 title: How to fool Windows and clean your C drive without deleting anything. Without Admin access.
 ---
 
-If you are a Windows user, changes are you have had ran out of space in C drive, at one point or another.
+If you are a Windows user, changes are you have had ran out of space in C drive, at one point or another. This tutorial will help you clean-up C drive using directory links aka [NTFS junction point](https://en.wikipedia.org/wiki/NTFS_junction_point).
 
-This tutorial will help you clean-up C drive using directory links aka [NTFS junction point](https://en.wikipedia.org/wiki/NTFS_junction_point). This lets Windows an all other programs believe that the specified directory exists but actually it's just a pointer to the new path which can be on another drive. 
+>This lets Windows and all other programs believe that the specified directory exists but actually it's just a pointer to the new path, which can also be on another drive. 
 
 It's like a shortcut but better.
 
