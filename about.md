@@ -9,4 +9,4 @@ Turns Coffee into Code.
 
 ### Contact me
 
-[me.satishyadav@gmail.com](mailto:me.satishyadav@gmail.com)
+[hello@satishyadav.com](mailto:hello@satishyadav.com)
