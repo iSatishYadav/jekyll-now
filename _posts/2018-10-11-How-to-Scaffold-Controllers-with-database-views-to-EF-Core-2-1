@@ -3,6 +3,8 @@ layout: post
 title: How to Scaffold Controllers with database views to EF Core 2.1
 published: true
 ---
+
+### How to Scaffold Controllers with database views to EF Core 2.1
 1. Create view in database.
 2. Create a POCO with same structure as view.
 3. Add a new Controller with POCO created in step#2
