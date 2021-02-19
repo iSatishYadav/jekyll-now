@@ -3,8 +3,8 @@ layout: post
 title: How to create MSMQs in your Windows 10 local development machine (2 ways)!
 ---
 
+## Why MSMQ?
 > Some point in your development career, you'd stumble upon an application which requires MSMQs (Microsoft Messaging Queues). Here's how to create MSMQs in your local development machine.
-
 
 ## Enable Microsoft Message Queueing Feature
 Microsoft Message Queuing feature is disabled by default, you need to enable it.
