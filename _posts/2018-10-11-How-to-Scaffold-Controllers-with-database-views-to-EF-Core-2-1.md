@@ -1,7 +1,6 @@
 ---
 layout: post
 title: How to Scaffold Controllers with database views to EF Core 2.1
-published: true
 ---
 
 ### How to Scaffold Controllers with database views to EF Core 2.1
