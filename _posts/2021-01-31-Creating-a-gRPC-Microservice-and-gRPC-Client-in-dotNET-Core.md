@@ -19,15 +19,15 @@ FYI: I'm using Visual Studio 2019 in a Windows 10 Machine.
 
 Don't worry, we'll create a new `gRPC` from the scratch.
 
-![Create New Project](assets/images/create-new-project.png)
+![Create New Project](https://raw.githubusercontent.com/iSatishYadav/HashGrpc/master/assets/images/create-new-project.png)
 
 * I'm using ASP.NET Core 3.1, but you may use .NET 5 as well
 
-	![Create New Project Framework Selection](assets/images/create-new-project-framework-selection.png)
+	![Create New Project Framework Selection](https://raw.githubusercontent.com/iSatishYadav/HashGrpc/master/assets/images/create-new-project-framework-selection.png)
 
 * The solution looks like this:
 
-	![Initial Project Structure](assets/images/initial-project-structure.png)
+	![Initial Project Structure](https://raw.githubusercontent.com/iSatishYadav/HashGrpc/master/assets/images/initial-project-structure.png)
 
 * Let's have a look at the existing `proto` file:
 
@@ -64,8 +64,8 @@ Let's build a Hashing `gRPC` Service which takes a `string` input and returns `S
 
 * Add a new file under _Protos_ directory:
 
-![New Proto Hash](assets/images/new-proto-hash.png)
-![New Proto Hash Created](assets/images/new-proto-hash-created.png)
+![New Proto Hash](https://raw.githubusercontent.com/iSatishYadav/HashGrpc/master/assets/images/new-proto-hash.png)
+![New Proto Hash Created](https://raw.githubusercontent.com/iSatishYadav/HashGrpc/master/assets/images/new-proto-hash-created.png)
 
 * Copy this code to newly created `hash.proto`.
 
@@ -101,7 +101,7 @@ Let's break it down.
 ### Generate Server stub
 * Edit the `.csproj` file of your project:
     
-    ![Edit Csproj](assets/images/edit-csproj.png)
+    ![Edit Csproj](https://raw.githubusercontent.com/iSatishYadav/HashGrpc/master/assets/images/edit-csproj.png)
 
 Add these lines to the `csproj` of your project. This lets Visual Studio known that we want to generate Server code for our `gRPC` service.
 ````xml
@@ -114,7 +114,7 @@ Add these lines to the `csproj` of your project. This lets Visual Studio known t
 
 * Under Services folder, create a new `Class` named `HashService`.
  
-    ![New Service Hash](assets/images/new-service-hash.png)
+    ![New Service Hash](https://raw.githubusercontent.com/iSatishYadav/HashGrpc/master/assets/images/new-service-hash.png)
 * Copy this code to the newly created Service.
 
 ````csharp
@@ -179,7 +179,7 @@ Let's break it down.
 ### Creating the Client
 Let's create a new `Console App` Project to test our `gRPC` Service.
 
-![Client New Project](assets/images/client-new-project.png)
+![Client New Project](https://raw.githubusercontent.com/iSatishYadav/HashGrpc/master/assets/images/client-new-project.png)
 
 #### Adding `Nuget` packages
 Install following nuget packages:
@@ -193,7 +193,7 @@ Install following nuget packages:
 #### Adding reference to the `.proto`
 * Add our `hash.proto` to a new Folder named `Protos`.
 
-    ![Client New Proto](assets/images/client-new-proto.png)
+    ![Client New Proto](https://raw.githubusercontent.com/iSatishYadav/HashGrpc/master/assets/images/client-new-proto.png)
 
 * Edit the `.csproj` of the project and following lines:
 
@@ -241,16 +241,16 @@ Let's break it down:
 
 > Notice the Service had method `GetHash` but the client has 2 methods `GetHash` and `GetHashAsync`. That's thanks to the tooling which generated both Synchronous and Asynchronous versions of our `GetHash` method.
 > 
->![Client Sync And Async Get Hash](assets/images/client-sync-and-async-get-hash.png)
+>![Client Sync And Async Get Hash](https://raw.githubusercontent.com/iSatishYadav/HashGrpc/master/assets/images/client-sync-and-async-get-hash.png)
 
 Run both Client and Service and you'll see the output something like this:
 
 * Client:
 
-    ![Client Output](assets/images/client-output.png)
+    ![Client Output](https://raw.githubusercontent.com/iSatishYadav/HashGrpc/master/assets/images/client-output.png)
 * Service
 
-    ![Client Log](assets/images/client-log.png)
+    ![Client Log](https://raw.githubusercontent.com/iSatishYadav/HashGrpc/master/assets/images/client-log.png)
 
 > `gRPC` needs HTTP2 under the hood for communication. HTTP2 may not be supported everywhere yet (unfortunately).
 
