@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to get started with [Couchbase][Couchbase Home Page] with ASP.NET Core using [Linq2Couchbase][Linq2Couchbase Github Page] AND Dependency Injection
+title: How to get started with Couchbase with ASP.NET Core 3 using Linq2Couchbase AND Dependency Injection
 ---
 
 ## Introduction 
