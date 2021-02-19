@@ -1,6 +1,7 @@
 ---
 layout: post
-itle: # Using Feature Flags aka Feature Toggles in Microservices and DevOps
+title: Using Feature Flags aka Feature Toggles in Microservices and DevOps
+tags: ["Microservices", "DevOps", "ASP.NET", "ASP.NET Core", "Docker"]
 ---
 
 ## What's a Feature Flag/Feature Toggle
