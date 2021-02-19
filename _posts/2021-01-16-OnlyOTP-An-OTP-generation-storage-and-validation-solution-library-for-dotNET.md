@@ -1,7 +1,7 @@
---
+---
 layout: post
 title: OnlyOTP - An OTP generation, storage, and validation solution
---
+---
 
 
 <p align="center">
