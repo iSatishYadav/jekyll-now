@@ -54,18 +54,18 @@ For this article we're creating an .NET Core (well, .NET 5 technically) Miroserv
 
 ### Create a new Project.
 * Let's create a new ASP.NET Core API Project with .NET 5 and Docker Support.
-![{E C A8294 F 253 A 4 A7 E 85 D4 F161 B3 F A18 D C}](assets/images/{ECA8294F-253A-4A7E-85D4-F161B3FA18DC}.png)
-![{151 C4 E E1 96 D4 496 A 9164 1 D1914971763}](assets/images/{151C4EE1-96D4-496A-9164-1D1914971763}.png)
+![{E C A8294 F 253 A 4 A7 E 85 D4 F161 B3 F A18 D C}](https://github.com/iSatishYadav/UsingFeatureFlagsInMicroservices/raw/master/assets/images/{ECA8294F-253A-4A7E-85D4-F161B3FA18DC}.png)
+![{151 C4 E E1 96 D4 496 A 9164 1 D1914971763}](https://github.com/iSatishYadav/UsingFeatureFlagsInMicroservices/raw/master/assets/images/{151C4EE1-96D4-496A-9164-1D1914971763}.png)
 
 * The initial project structure looks like this:
-![{C D6 C82 D6 0 D57 4 C4 B B5 C5 B6 D2890 D D90 E}](assets/images/{CD6C82D6-0D57-4C4B-B5C5-B6D2890DD90E}.png)
+![{C D6 C82 D6 0 D57 4 C4 B B5 C5 B6 D2890 D D90 E}](https://github.com/iSatishYadav/UsingFeatureFlagsInMicroservices/raw/master/assets/images/{CD6C82D6-0D57-4C4B-B5C5-B6D2890DD90E}.png)
 
 ### Add a new Feature
 Now we'll add a new feature in our Microservice which `echo`s the reverse of content received.
 e.g. If we say _hello_, the Microservice should return _olleh_.
 
 * Add a new Controller named `EchoController`. Choose Empty, we'll write all the code we need from scratch.
-![{70 C8775 D C D B0 43 E4 A D2 E 15134 F1 D7 E52}](assets/images/{70C8775D-CDB0-43E4-AD2E-15134F1D7E52}.png)
+![{70 C8775 D C D B0 43 E4 A D2 E 15134 F1 D7 E52}](https://github.com/iSatishYadav/UsingFeatureFlagsInMicroservices/raw/master/assets/images/{70C8775D-CDB0-43E4-AD2E-15134F1D7E52}.png)
 
 * Add following super complex code to the Echo
     ````csharp
@@ -101,7 +101,7 @@ We can implement a feature management on own, however why to re-invent the wheel
 We'll use [Microsoft.FeatureManagement.AspNetCore](https://www.nuget.org/packages/Microsoft.FeatureManagement.AspNetCore) for our Microservice.
 
 * Add the package
-![{0 A10 C8 A6 74 E B 4942 B039 2 C C B234 B B B7 C}](assets/images/{0A10C8A6-74EB-4942-B039-2CCB234BBB7C}.png)
+![{0 A10 C8 A6 74 E B 4942 B039 2 C C B234 B B B7 C}](https://github.com/iSatishYadav/UsingFeatureFlagsInMicroservices/raw/master/assets/images/{0A10C8A6-74EB-4942-B039-2CCB234BBB7C}.png)
 
 ### Anatomy of Feature Flags/Feature Toggles
 There are 3 things we need to take care of:
@@ -122,7 +122,7 @@ We'll create a root element `FeatureFlags` and a Feature named `ReverseEcho`.
 }
 ````
 Here's how our `appsettings.json` looks like:
-![{107 C A D D A A D A0 4 F D2 B5 A2 5 E A9 A75 D D F72}](assets/images/{107CADDA-ADA0-4FD2-B5A2-5EA9A75DDF72}.png)
+![{107 C A D D A A D A0 4 F D2 B5 A2 5 E A9 A75 D D F72}](https://github.com/iSatishYadav/UsingFeatureFlagsInMicroservices/raw/master/assets/images/{107CADDA-ADA0-4FD2-B5A2-5EA9A75DDF72}.png)
 ### 2. How to tell our application that we'll use Feature Management?
 We'll use our Dependency Injection container to add Feature Management Service:
 
@@ -140,7 +140,7 @@ public void ConfigureServices(IServiceCollection services)
 
 `Startup.cs` looks something like this:
 
-![{E D38054 E D E4 F 46 E5 B750 E C F9 D A40 B444}](assets/images/{ED38054E-DE4F-46E5-B750-ECF9DA40B444}.png)
+![{E D38054 E D E4 F 46 E5 B750 E C F9 D A40 B444}](https://github.com/iSatishYadav/UsingFeatureFlagsInMicroservices/raw/master/assets/images/{ED38054E-DE4F-46E5-B750-ECF9DA40B444}.png)
 ### 3. How to use it in code to restrict functionality?
 
 `Microsoft.FeatureManagement.AspNetCore` Provides multiple ways to check for Feature Flags:
@@ -159,12 +159,12 @@ public class EchoController : ControllerBase
     }
 }
 ````
-![{8 F7 D438 E 06 B B 4046 8 C E2 78 D50 F07 A55 E}](assets/images/{8F7D438E-06BB-4046-8CE2-78D50F07A55E}.png)
+![{8 F7 D438 E 06 B B 4046 8 C E2 78 D50 F07 A55 E}](https://github.com/iSatishYadav/UsingFeatureFlagsInMicroservices/raw/master/assets/images/{8F7D438E-06BB-4046-8CE2-78D50F07A55E}.png)
 
 Only if the _ReverseEcho_ `Feature Flag` is true, this `Action Method` would be called.
 * Test the behaviour by running the application and hitting the URL https://localhost:49155/api/echo/hello. Response returned _olleh_ as expected.
 
-![{2 E78 A A C5 631 B 47 F F 9 F31 B45 F F004192 B}](assets/images/{2E78AAC5-631B-47FF-9F31-B45FF004192B}.png)
+![{2 E78 A A C5 631 B 47 F F 9 F31 B45 F F004192 B}](https://github.com/iSatishYadav/UsingFeatureFlagsInMicroservices/raw/master/assets/images/{2E78AAC5-631B-47FF-9F31-B45FF004192B}.png)
 #### 2. Using `IFeatureManager` interface
 * Inject the `IFeatureManager` interface and check whether the Feature Flag is enabled.
 * 
@@ -193,7 +193,7 @@ public class EchoController : ControllerBase
     }
 }
 ````
-![{60285 B97 7 C0 F 4 B B C 8 D09 F4 E1 E B8 B7 C9 C}](assets/images/{60285B97-7C0F-4BBC-8D09-F4E1EB8B7C9C}.png)
+![{60285 B97 7 C0 F 4 B B C 8 D09 F4 E1 E B8 B7 C9 C}](https://github.com/iSatishYadav/UsingFeatureFlagsInMicroservices/raw/master/assets/images/{60285B97-7C0F-4BBC-8D09-F4E1EB8B7C9C}.png)
 
 * Test the behaviour by running the application and hitting the URL https://localhost:49155/api/echo/hello. Response returned _olleh_ as expected.
 
@@ -206,7 +206,7 @@ public class EchoController : ControllerBase
   }
 }
 ````
-![{9 C B6212 F 43 E3 484 C 8 F6 C 7916 E A4748 C C}](assets/images/{9CB6212F-43E3-484C-8F6C-7916EA4748CC}.png)
+![{9 C B6212 F 43 E3 484 C 8 F6 C 7916 E A4748 C C}](https://github.com/iSatishYadav/UsingFeatureFlagsInMicroservices/raw/master/assets/images/{9CB6212F-43E3-484C-8F6C-7916EA4748CC}.png)
 * Observe an `HTTP 404` is returned.
 ````json
 {
@@ -216,7 +216,7 @@ public class EchoController : ControllerBase
     "traceId" : "00-0cf135c3abca6548b0651f57edf39416-a0833546ef13cb4e-00"
 }
 ````
-![{22 E F2 C0 C F18 D 4 A18 83 B5 41 A6 C6 A4 F676}](assets/images/{22EF2C0C-F18D-4A18-83B5-41A6C6A4F676}.png)
+![{22 E F2 C0 C F18 D 4 A18 83 B5 41 A6 C6 A4 F676}](https://github.com/iSatishYadav/UsingFeatureFlagsInMicroservices/raw/master/assets/images/{22EF2C0C-F18D-4A18-83B5-41A6C6A4F676}.png)
 
 
 Congratulations, you just implemented Feature Flags/Feature Toggles in your Microservice. Of course string reversal example was far from a real-world feature, but now we understand the idea.
