@@ -355,7 +355,7 @@ Check out this interactive usage chart from https://caniuse.com.
 </p>
 
 ## Live demo
-Go to https://blog.satishyadav.com/RunningWebAssemblyInBrowser a see the WASM in action. Go to Dev Tools are see for yourself.
+Go to https://blog.satishyadav.com/RunningWebAssemblyInBrowser/hash a see the WASM in action. Go to Dev Tools are see for yourself.
 
 
 
