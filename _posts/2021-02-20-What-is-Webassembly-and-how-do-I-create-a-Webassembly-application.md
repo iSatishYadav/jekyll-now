@@ -1,7 +1,7 @@
 ---
 layout: post
-title: What is Webassembly and how to create a Webassembly app?
-tags: ["Webassembly", "Blazor", "ASP.NET Core", ".NET 5"]
+title: What is WebAssembly and how to create a WebAssembly app?
+tags: ["WebAssembly", "Blazor", "ASP.NET Core", ".NET 5"]
 excerpt_separator: <!--more-->
 ---
 
@@ -9,13 +9,13 @@ excerpt_separator: <!--more-->
 
 The browsers only understand JavaScript, however with rise of stuff that we use on browsers e.g. Games, Virtual Reality, Augumented Reality, JavaScript hasn't been able to catch up due to its inherent `interpreted` nature despite its powerful engines like V8.
 
-Suppose you have a cool game or software developed in a low-level programming language e.g. C/C++ or a high-level programming language e.g. Java/C#/Rust/Go. With Webassembly you can run these apps on a browser. Wihout re-writing them in JavaScript.
+Suppose you have a cool game or software developed in a low-level programming language e.g. C/C++ or a high-level programming language e.g. Java/C#/Rust/Go. With WebAssembly you can run these apps on a browser. Wihout re-writing them in JavaScript.
 
 Wait, what?
 
 <!--more-->
 
-## What is Webassembly?
+## What is WebAssembly?
 
 > WebAssembly (abbreviated Wasm) is a binary instruction format for a stack-based virtual machine. Wasm is designed as a portable compilation target for programming languages, enabling deployment on the web for client and server applications.
 > 
@@ -36,7 +36,7 @@ Check out [Milica Mihajlija](https://blog.logrocket.com/author/milicamihajlija/)
 
 Because why not?
 
-But it's not why we're talking about Blazor here. The reason is, one of the hosting models of Blazor is Webassembly.
+But it's not why we're talking about Blazor here. The reason is, one of the hosting models of Blazor is WebAssembly.
 
 Blazor's home page says: 
 > Blazor can run your client-side C# code directly in the browser, using WebAssembly. Because it's real .NET running on WebAssembly, you can re-use code and libraries from server-side parts of your application.
@@ -45,7 +45,7 @@ Blazor's home page says:
 ## Let's Code a Webassemby App
 Yeah, enough with the theory already. Let's get down to the code.
 ### Create a new Project
-* Open Visual Studio and create a new _Blazor Webassembly App_
+* Open Visual Studio and create a new _Blazor WebAssembly App_
 * **[Optional]** Check _Progressive Web Application_. More on Progressive Web App in a later article.
 
     ![{43699453 F E18 4883 91 A6 E69481 D923 D5}](https://github.com/iSatishYadav/RunningWebAssemblyInBrowser/raw/master/images/{43699453-FE18-4883-91A6-E69481D923D5}.png)
