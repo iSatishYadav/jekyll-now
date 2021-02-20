@@ -25,7 +25,7 @@ Wait, what?
 >
 > -https://research.mozilla.org/webassembly
 
-![W A S M](images/WASM.png)
+![W A S M](https://github.com/iSatishYadav/RunningWebAssemblyInBrowser/raw/master/images/WASM.png)
 
 
 Check out [Milica Mihajlija](https://blog.logrocket.com/author/milicamihajlija/)'s awesome blog to know more.
