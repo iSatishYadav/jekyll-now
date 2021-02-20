@@ -9,7 +9,7 @@ excerpt_separator: <!--more-->
 
 The browsers only understand JavaScript, however with rise of stuff that we use on browsers e.g. Games, Virtual Reality, Augumented Reality, JavaScript hasn't been able to catch up due to its inherent `interpreted` nature despite its powerful engines like V8.
 
-Suppose you have a cool game or software developed in a low-level programming language e.g. C/C++ or a high-lelve programming language e.g. Java/C#/Rust/Go. With Webassembly you can run these apps on a browser. Wihout re-writing them in JavaScript.
+Suppose you have a cool game or software developed in a low-level programming language e.g. C/C++ or a high-level programming language e.g. Java/C#/Rust/Go. With Webassembly you can run these apps on a browser. Wihout re-writing them in JavaScript.
 
 Wait, what?
 
@@ -116,7 +116,7 @@ Yeah, enough with the theory already. Let's get down to the code.
     ![{E C D7614 E A A D7 4647 9206 F D18430367 D2}](https://github.com/iSatishYadav/RunningWebAssemblyInBrowser/raw/master/images/{ECD7614E-AAD7-4647-9206-FD18430367D2}.png)
 
 ## If the code is running in the Browser, where are all the `DLLs`?
-* Behind the scene, Blazor generates a `blazor.boot.json` to determin which `DLLs` need to downloaded and then stores them into browser's Cache. You can verify it by going to Dev Tools..
+* Behind the scene, Blazor generates a `blazor.boot.json` to determine which `DLLs` need to downloaded and then stores them into browser's Cache. You can verify it by going to Dev Tools..
  
     ![{64 B55 A B6 B692 41 D0 99 F4 73 C5 B9 F50 B24}](https://github.com/iSatishYadav/RunningWebAssemblyInBrowser/raw/master/images/{64B55AB6-B692-41D0-99F4-73C5B9F50B24}.png)
 * Here's the full contents of the `blazor.boot.json`   
