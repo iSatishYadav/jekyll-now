@@ -41,6 +41,7 @@ But it's not why we're talking about Blazor here. The reason is, one of the host
 Blazor's home page says: 
 > Blazor can run your client-side C# code directly in the browser, using WebAssembly. Because it's real .NET running on WebAssembly, you can re-use code and libraries from server-side parts of your application.
 > -https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor
+
 ## Let's Code a Webassemby App
 Yeah, enough with the theory already. Let's get down to the code.
 ### Create a new Project
