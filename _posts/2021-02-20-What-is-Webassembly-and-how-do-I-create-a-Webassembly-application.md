@@ -2,6 +2,7 @@
 layout: post
 title: What is Webassembly and how to create a Webassembly app?
 tags: ["Webassembly", "Blazor", "ASP.NET Core", ".NET 5"]
+excerpt_separator: <!--more-->
 ---
 
 ## Preamble
@@ -11,6 +12,8 @@ The browsers only understand JavaScript, however with rise of stuff that we use 
 Suppose you have a cool game or software developed in a low-level programming language e.g. C/C++ or a high-lelve programming language e.g. Java/C#/Rust/Go. With Webassembly you can run these apps on a browser. Wihout re-writing them in JavaScript.
 
 Wait, what?
+
+<!--more-->
 
 ## What is Webassembly?
 
