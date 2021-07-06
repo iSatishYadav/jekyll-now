@@ -12,7 +12,7 @@ As a newbie to AWS, I was unable to find any comprehensive guide on how to setup
 There are 3 ways you can download:
 1. Standalone `jar` file
 2. Using `Docker`
-3. Using an Apache Maven`
+3. Using an `Apache Maven`
 
 I'm using Docker for this tutorial, for instructions on other 2 ways, visit this official [AWS site](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.DownloadingAndRunning.html)
 
