@@ -4,8 +4,6 @@ title: How to setup and use DynamoDB Locally - Free
 tags: ["aws", "dynamodb", "docker"]
 ---
 
-# How to setup and use DynamoDB Locally - Free
-
 Did you know DynamoDB from AWS has a locally downloadable version which you can install on your local machine and use for development and testing purposes.
 
 As a newbie to AWS, I was unable to find any comprehensive guide on how to setup and use DynamoDB locally. So without further ado, let's start.
